@@ -62,6 +62,7 @@ dfn {
 h1 {
   margin: .67em 0;
   font-size: 2em;
+  color: white;
 }
 mark {
   color: #000;
@@ -233,10 +234,12 @@ th {
   h3 {
     orphans: 3;
     widows: 3;
+    color: gray;
   }
   h2,
   h3 {
     page-break-after: avoid;
+    color: gray;
   }
   .navbar {
     display: none;
@@ -1266,6 +1269,7 @@ h6 .small,
 h1,
 .h1 {
   font-size: 36px;
+  color: white;
 }
 h2,
 .h2 {
