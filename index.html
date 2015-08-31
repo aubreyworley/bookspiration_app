@@ -60,7 +60,7 @@
                 <a href="#services" onclick = $("#menu-close").click(); >Our Mission</a>
             </li>
             <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >Find Your Next Book</a>
             </li>
             <li>
                 <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
@@ -99,7 +99,7 @@
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
                     <h2>Our Mission</h2>
-                    <h3>As our world is ever-changing and ever-connecting, we seek to encourage people continue to grow personally, professionally, socially, and intellectually through reading books of all kinds. The more variety we expose ourselves to, the more we can adapt to our environments, relate to others of different backgrounds, and discover new worlds. Who doesn't want to time travel, experience the lives of history's greatest, and jump into new tales of magic and mystery?  </h3>
+                    <h3>As our world is ever-changing and ever-connecting, we seek to encourage people to continue to grow personally, professionally, socially, and intellectually through reading books of all kinds. The more variety we expose ourselves to, the more we can adapt to our environments, relate to others of different backgrounds, and discover new worlds. Who doesn't want to time travel, experience the lives of history's greatest, and jump into new tales of magic and mystery?  </h3>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
@@ -159,40 +159,45 @@
     <!-- Callout -->
     <aside class="callout">
         <div class="text-vertical-center">
+            <div row="text-center">
             <h3>Developing a love for reading has been proven to improve all areas of intelligence, reduce stress, boost brain power, fight disease, and can increase empathy to make it easier to relate to others. <span class="glyphicon glyphicon-heart"></span></h3>
         </div>
+        </div>
     </aside>
+    <br>
+    <br>
 
     <!-- find book -->
     <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="col-lg-10 col-lg-offset-1 text-center">
-            <h1>Bay Area Bookspiration</h1>
-            <h2> Find your next book! </h2>
-            <form ng-submit="searchCategories()" class="form-inline">
-              <div class="form-group">
-                <input type="text" ng-model="categories" class="form-control" placeholder="Type any topic/genre">
-            </div>
-            <input type="submit" value="Search" class="btn btn-dark">
-        </form>
-        <br>
-        <br>
-        <div class="row" ng-show="books.length > 0" >
-          <div class="col-md-3 col-sm-4" ng-repeat="book in books">
-            <div class="thumbnail">
-              <a ng-href="{{book.volumeInfo.infoLink}}" target="_blank"><img ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}"></a> 
-              <br>
-              <p>Title: {{book.volumeInfo.title}}</p>
-              <p><span class="glyphicon glyphicon-heart"></span>Average Rating: {{book.volumeInfo.averageRating}}</p>
+          <div class="col-md-12 text-center">
+             <div class="col-lg-12 text-center">
+                <h2> Find your next book! </h2>
+                <hr class="small">
+                <form ng-submit="searchCategories()" class="form-inline">
+                    <div class="form-group">
+                        <input type="text" ng-model="categories" class="form-control" placeholder="Type any topic/genre">
+                    </div>
+                        <input type="submit" value="Search" class="btn btn-dark">
+                </form>
+                <br>
+                <br>
+                <div class="row" ng-show="books.length > 0" >
+                    <div class="col-md-3 col-sm-4" ng-repeat="book in books">
+                         <div class="thumbnail">
+                            <a ng-href="{{book.volumeInfo.infoLink}}" target="_blank"><img ng-src="{{book.volumeInfo.imageLinks.smallThumbnail}}"></a> 
+                            <br>
+                            <p>Title: {{book.volumeInfo.title}}</p>
+                            <p><span class="glyphicon glyphicon-heart"></span>Average Rating: {{book.volumeInfo.averageRating}}</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
-        </div>
-     </div>
     </div>
-</div>
-</div>
-
+    <br>
+    <br>
     <!-- Portfolio -->
     <!-- <section id="portfolio" class="portfolio">
         <div class="container">
@@ -245,9 +250,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                    <h3>Join the Conversation</h3>
+                    <a href="https://www.facebook.com/groups/614520291993590/" class="btn btn-lg btn-light">Our Facebook Group</a>
+                    <a href="https://twitter.com/BookspirationSF" class="btn btn-lg btn-dark">Our Twitter Page</a>
                 </div>
             </div>
         </div>
@@ -255,12 +260,8 @@
 
     <!-- Map -->
     <section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-        <br />
-        <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
-        </iframe>
+
+  <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/aworley.nahk8oan/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYXdvcmxleSIsImEiOiIxNGRlYmM2ZmM0YmMxY2VlZjQ4NTMyY2Q4OWQ0M2I0OSJ9.pIOJ95hk0i-6hzOvqhU7zw'></iframe>
     </section>
 
     <!-- Footer -->
@@ -282,7 +283,7 @@
                             <a href="https://www.facebook.com/groups/614520291993590/"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            <a href="https://twitter.com/BookspirationSF"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>

@@ -185,6 +185,8 @@ hr.small {
     width: 100%;
     height: 400px;
     color: #fff;
+    padding-left: 20%;
+    padding-right: 20%;
     background: url(../img/callout.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
