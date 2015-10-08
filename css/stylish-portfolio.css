@@ -212,6 +212,16 @@ hr.small {
     opacity: 0.8;
 }
 
+/* Video */
+.intrinsic-container iframe {
+  position: relative;
+  top:0;
+  left: 0;
+  width: 56%;
+  height: 500px;
+  padding-bottom: 10%;
+}
+
 /* Call to Action */
 
 .call-to-action {
